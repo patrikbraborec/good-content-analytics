@@ -4,11 +4,9 @@ import os
 import psycopg2
 import json
 
-"""
-Local testing
-from dotenv import load_dotenv
-load_dotenv()
-"""
+# Local testing
+# from dotenv import load_dotenv
+# load_dotenv()
 
 start = datetime(year=2020, month=1, day=1)
 stop = datetime.now()
@@ -20,13 +18,9 @@ publications = StatGrabberPublication(slug=os.environ["MEDIUM_PUBLICATION"],
 
 data = publications.get_all_story_overview()
 
-conn = psycopg2.connect(
-    host=os.environ["DB_HOST"],
-    database=os.environ["DB_NAME"],
-    user=os.environ["DB_USER"],
-    password=os.environ["DB_PASSWORD"])
-
-with conn.cursor() as cursor:
-    cursor.execute("INSERT INTO good_content_analytics_input_stage.medium (raw_data, date) VALUES(%s, %s)",
-                   (json.dumps(data), stop))
-    conn.commit()
+with psycopg2.connect(host=os.environ["DB_HOST"], database=os.environ["DB_NAME"],
+                      user=os.environ["DB_USER"], password=os.environ["DB_PASSWORD"]) as conn:
+    with conn.cursor() as cursor:
+        cursor.execute("INSERT INTO good_content_analytics_input_stage.medium (raw_data, date) VALUES(%s, %s)",
+                       (json.dumps(data), stop))
+        conn.commit()
