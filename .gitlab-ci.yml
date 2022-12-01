@@ -2,7 +2,7 @@ stages:
   - fetch
 
 fetch_medium:
-  image: python:3.10-alpine  
+  image: python:3.10-slim-buster  
   stage: fetch
   before_script:
     - pip install --upgrade pip setuptools wheel
