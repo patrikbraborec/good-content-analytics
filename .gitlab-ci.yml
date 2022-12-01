@@ -4,6 +4,10 @@ stages:
 fetch_medium:
   image: python:3.10-alpine  
   stage: fetch
+  before_script:
+    - pip install --upgrade pip setuptools wheel
+    - apk update
+    - apk add -q --no-cache postgresql-dev gcc python3-dev musl-dev
   script:
     - pip install -r requirements.txt
     - python fetch_data.py
