@@ -1,0 +1,9 @@
+stages:
+  - fetch
+
+fetch_medium:
+  image: python:3.10-alpine  
+  stage: fetch
+  script:
+    - pip install -r requirements.txt
+    - python fetch_data.py
