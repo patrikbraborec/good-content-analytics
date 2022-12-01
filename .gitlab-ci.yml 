@@ -1,14 +1,14 @@
 .base:
-    image: python:3.10-alpine
+  image: python:3.10-alpine
     rules:
-        - if: '$RUN_ALL_JOBS == "true"'
+      - if: '$RUN_ALL_JOBS == "true"'
         when: manual
 
 fetch_medium:
-    extends:
-        - .base
-    script:
-        - pip install -r requirements.txt
-        - python fetch_data.py
+  extends:
+    - .base
+  script:
+    - pip install -r requirements.txt
+    - python fetch_data.py
 
 
