@@ -4,9 +4,6 @@ stages:
 
 fetch_medium:
   stage: fetch
-  before_script:
-    - apt-get update
-    - apt-get install -y libpq-dev python3-dev
   script:
     - pip install -r requirements.txt
     - python fetch_data.py
