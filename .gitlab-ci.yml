@@ -1,8 +1,8 @@
+image: python:3.10-slim-buster  
 stages:
   - fetch
 
 fetch_medium:
-  image: python:3.10-slim-buster  
   stage: fetch
   script:
     - pip install -r requirements.txt
