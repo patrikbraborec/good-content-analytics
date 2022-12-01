@@ -1,0 +1,29 @@
+
+
+============================== 2022-12-01 09:22:01.239548 | 3594d1b8-2d68-4678-902b-85443038eae1 ==============================
+09:22:01.239558 [info ] [MainThread]: Running with dbt=1.1.1
+09:22:01.239992 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/patrikbraborec/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+09:22:01.240168 [debug] [MainThread]: Tracking: tracking
+09:22:01.266012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a54efd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a54e970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a54ef70>]}
+09:24:48.398455 [debug] [MainThread]: Starter project path: /usr/local/Cellar/dbt-postgres/1.1.1/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+09:24:55.825112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a53a3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a53a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a53a1f0>]}
+
+
+============================== 2022-12-01 09:25:55.374722 | 9e63e9e7-bdab-4e42-9381-07491d9e667a ==============================
+09:25:55.374732 [info ] [MainThread]: Running with dbt=1.1.1
+09:25:55.375058 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/patrikbraborec/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+09:25:55.375203 [debug] [MainThread]: Tracking: tracking
+09:25:55.388599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae22e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae22850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae22fa0>]}
+09:26:08.667754 [debug] [MainThread]: Starter project path: /usr/local/Cellar/dbt-postgres/1.1.1/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+09:26:10.247721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae0c640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae0c430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae0ca30>]}
+
+
+============================== 2022-12-01 09:33:28.874104 | 001ab7f8-249d-4643-9935-f6132eab7142 ==============================
+09:33:28.874114 [info ] [MainThread]: Running with dbt=1.1.1
+09:33:28.874447 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/patrikbraborec/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+09:33:28.874591 [debug] [MainThread]: Tracking: tracking
+09:33:28.888485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c5a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c5670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c5af0>]}
+09:33:28.889493 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/patrikbraborec/.dbt
+09:33:28.889914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c5670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c5af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c53a0>]}
