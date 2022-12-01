@@ -21,6 +21,7 @@ data = publications.get_all_story_overview()
 with psycopg2.connect(host=os.environ["DB_HOST"], database=os.environ["DB_NAME"],
                       user=os.environ["DB_USER"], password=os.environ["DB_PASSWORD"]) as conn:
     with conn.cursor() as cursor:
-        cursor.execute("INSERT INTO good_content_analytics_input_stage.medium (raw_data, date) VALUES(%s, %s)",
-                       (json.dumps(data), stop))
+        for record in data:
+            cursor.execute("INSERT INTO good_content_analytics_input_stage.medium (raw_data, date) VALUES(%s, %s)",
+                           (json.dumps(record), stop))
         conn.commit()
