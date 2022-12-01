@@ -150,7 +150,7 @@ class StatGrabberPublication(StatGrabberBase):
 
         return data["value"]
 
-    def get_all_story_overview(self, limit=50, **kwargs):
+    def get_all_story_overview(self, limit: int = 50, **kwargs):
         params = {"limit": limit, **kwargs}
         endpoint = f"https://medium.com/{self.slug}/stats/stories"
         response = self._fetch(endpoint, params)
